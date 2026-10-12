@@ -29,11 +29,11 @@ jobs:
       - name: Fetch runtime components
         run: tools/fetch_components.sh
 
-      - name: Build Debug APK
-        run: ./gradlew assembleDebug
+      - name: Build Release APK
+        run: ./gradlew assembleModernRelease
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: wow-forever-4-3-apk
-          path: app/build/outputs/apk/**/*.apk
+          path: app/build/outputs/apk/modern/release/*.apk
