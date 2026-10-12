@@ -964,7 +964,7 @@ private val CONFIG_DEFAULTS = linkedMapOf(
     "textLocale" to "\"enUS\"",
     "audioLocale" to "\"enUS\"",
     "gxMaximize" to "\"1\"",
-    "gxWindowedResolution" to "\"1920x1080\"",
+    "gxWindowedResolution" to "\"1280x960\"",
     "graphicsQuality" to "\"0\"",
     "ResampleQuality" to "\"0\"",
     "RenderScale" to "\"1\"",
@@ -988,7 +988,7 @@ private val CONFIG_DEFAULTS = linkedMapOf(
     "InputDeviceInterfaceStyle" to "\"1\"",
 )
 
-private val FORCED_CONFIG_KEYS = listOf("gxApi", "RenderScale", "ResampleQuality", "GamePadEnable", "InputDeviceInterfaceStyle")
+private val FORCED_CONFIG_KEYS = listOf("gxApi", "gxWindowedResolution", "RenderScale", "ResampleQuality", "GamePadEnable", "InputDeviceInterfaceStyle")
 
 private val LEGACY_CONFIG_VALUES = mapOf(
     "farclip" to "\"3000\"",
