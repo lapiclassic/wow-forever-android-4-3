@@ -115,7 +115,7 @@ tools/fetch_components.sh           # Wine/Proton, DXVK and Turnip archives (~13
 
 Release builds are signed with `app/keystores/keystore.properties` when it exists (`storeFile`, `storePassword`, `keyAlias`, `keyPassword`). Otherwise they fall back to the debug key. Builds signed with different keys can't update each other, so switching between them means uninstalling first.
 
-`fetch_components.sh` downloads the three runtime archives from this repo's `components-v1` release and checks them against `tools/components.sha256`. If you already have them, pass a folder instead: `tools/fetch_components.sh /path/to/components`.
+`fetch_components.sh` downloads the runtime archives from this repo's `components-v1` release and checks them against `tools/components.sha256`. The GitHub Actions APK build runs this script before building, so its APK includes the required components. If you already have the archives, pass a folder instead: `tools/fetch_components.sh /path/to/components`.
 
 ---
 

@@ -26,6 +26,9 @@ jobs:
       - name: Make gradlew executable
         run: chmod +x gradlew
 
+      - name: Fetch runtime components
+        run: tools/fetch_components.sh
+
       - name: Build Debug APK
         run: ./gradlew assembleDebug
 
